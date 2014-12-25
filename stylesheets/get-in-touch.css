@@ -17,7 +17,7 @@ html, body {
 	}
 
 h1 {
-	font-size: 35px;
+	font-size: 40px;
 	line-height: 48px;
 	font-weight: 200;
 }
@@ -31,14 +31,16 @@ h2 {
 
 .left, .services {
 	position: absolute;
-	bottom: 50px;
+
 	z-index: 2;
 }
 	.left {
 		left: 50px;
+		bottom: 33px;
 	}
 	.services {
 		right: 50px;
+		bottom: 50px;
 	}
 		.services li {
 			float: right;
