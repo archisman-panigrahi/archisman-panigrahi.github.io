@@ -7,10 +7,16 @@
 			font-family: BenSenHandwriting;
 			src: url(BenSenHandwriting.woff2);
 		}
+
 		html,
 		body {
 			overflow: hidden;
-			}
+			-webkit-user-select: none;
+			-moz-user-select: -moz-none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
 		body {
 			font: 15px/25px "BenSenHandwriting", Klavika, sans-serif;
 			text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4);
@@ -43,10 +49,10 @@
 
 		@media (max-width:800px) {
 
-		h1:hover,
-		h2:hover {
-			transform: scale(1.5);
-		}
+			h1:hover,
+			h2:hover {
+				transform: scale(1.5);
+			}
 		}
 
 	</style>
