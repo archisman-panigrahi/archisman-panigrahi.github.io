@@ -20,7 +20,8 @@
 		body {
 			font: 15px/25px "BenSenHandwriting", Klavika, sans-serif;
 			text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4);
-			background: linear-gradient(to bottom, #d1552f, #c30b0b);;
+			background: linear-gradient(to bottom, #d1552f, #c30b0b);
+			;
 			color: #fff;
 			text-align: center;
 		}
@@ -51,14 +52,24 @@
 			h1:hover,
 			h2:hover {
 				transform: scale(1.3);
-			}
-		}
-		@media (max-height:800px,) {
-			body,html {
-				overflow-y: visible;
+				color: #f2e68c;
 			}
 		}
 
+		@media (max-height:400px) {
+			h1 {
+				padding: 10%;
+			}
+			h1:hover,
+			h2:hover {
+				color: #f2e68c;
+			}
+			body,
+			html {
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+		}
 	</style>
 	<title>Happy New Year</title>
 </head>
