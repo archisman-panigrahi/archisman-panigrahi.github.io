@@ -8,6 +8,96 @@
 			src: url(BenSenHandwriting.woff2);
 		}
 
+		@-webkit-keyframes blink {
+			0% {
+				background: linear-gradient(#d1552f, #c30b0b);
+			}
+			50% {
+				background: linear-gradient(#8CBF26, #00ff14);
+			}
+			100% {
+				background: linear-gradient(#d1552f, #c30b0b);
+			}
+		}
+
+		@-moz-keyframes blink {
+			0% {
+				background: linear-gradient(#d1552f, #c30b0b);
+			}
+			50% {
+				background: linear-gradient(#8CBF26, #00ff14);
+			}
+			100% {
+				background: linear-gradient(#d1552f, #c30b0b);
+			}
+		}
+
+		@-ms-keyframes blink {
+			0% {
+				background: linear-gradient(#d1552f, #c30b0b);
+			}
+			50% {
+				background: linear-gradient(#8CBF26, #00ff14);
+			}
+			100% {
+				background: linear-gradient(#d1552f, #c30b0b);
+			}
+		}
+
+		@-webkit-keyframes rotate {
+			0% {
+				transform: rotate(10deg);
+			}
+			25% {
+				transform: scale(1.5);
+			}
+			50% {
+				transform: rotate(-10deg);
+			}
+			75% {
+				transform: scale(1.5);
+			}
+			100% {
+				transform: rotate(10deg);
+			}
+		}
+
+		@-moz-keyframes rotate {
+			0% {
+				transform: rotate(10deg);
+			}
+			25% {
+				transform: scale(1.5);
+			}
+			50% {
+				transform: rotate(-10deg);
+			}
+			75% {
+				transform: scale(1.5);
+			}
+			100% {
+				transform: rotate(10deg);
+			}
+		}
+
+		@-ms-keyframes rotate {
+			0% {
+				transform: rotate(10deg);
+			}
+			25% {
+				transform: scale(1.5);
+			}
+			50% {
+				transform: rotate(-10deg);
+			}
+			75% {
+				transform: scale(1.5);
+			}
+			100% {
+				transform: rotate(10deg);
+			}
+		}
+
 		html,
 		body {
 			overflow: hidden;
@@ -15,12 +105,17 @@
 			-moz-user-select: -moz-none;
 			-ms-user-select: none;
 			user-select: none;
+
 		}
 
 		body {
 			font: 15px/25px "BenSenHandwriting";
 			text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4);
 			background: linear-gradient(#d1552f, #c30b0b);
+			-webkit-animation: blink 1s infinite;
+			-moz-animation: blink 1s infinite;
+			-ms-animation: blink 1s infinite;
+			animation-delay: 2s;
 			color: #fff;
 			text-align: center;
 		}
@@ -30,6 +125,8 @@
 			line-height: 48px;
 			font-weight: 200;
 			padding: 15%;
+			animation: rotate 1.5s infinite;
+			animation-delay: 2s;
 		}
 
 		h2 {
@@ -69,23 +166,26 @@
 				overflow-x: hidden;
 			}
 		}
+
 	</style>
 	<title>Happy New Year</title>
 </head>
+
 <body onload="play()">
 	<div id="hi">
-	<h1 >শুভ নববর্ষের প্রীতি ও শুভেচ্ছা</h1><br>
+		<h1>শুভ নববর্ষের প্রীতি ও শুভেচ্ছা</h1><br>
 	</div>
 	<h2 id="hide">--- তাতা</h2><br>
-
 </body>
+
 <script>
-	function play()
-	{
+	function play() {
 		document.getElementById("hi").style.transitionDuration = "800ms";
 		document.getElementById("hide").style.transitionDuration = "5s";
 		document.getElementById("hi").style.transform = "rotate(720deg)";
 		document.getElementById("hide").style.opacity = "0.8";
 	}
-	</script>
+
+</script>
+
 </html>
