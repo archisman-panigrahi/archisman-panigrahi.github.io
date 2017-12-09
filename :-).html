@@ -18,10 +18,9 @@
 		}
 
 		body {
-			font: 15px/25px "BenSenHandwriting", Klavika, sans-serif;
+			font: 15px/25px "BenSenHandwriting";
 			text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4);
-			background: linear-gradient(to bottom, #d1552f, #c30b0b);
-			;
+			background: linear-gradient(#d1552f, #c30b0b);
 			color: #fff;
 			text-align: center;
 		}
@@ -36,7 +35,7 @@
 		h2 {
 			font-size: 20px;
 			font-weight: normal;
-			opacity: .8;
+			opacity: 0.05;
 			text-shadow: 0 2px 10px rgba(0, 0, 0, .8);
 		}
 
@@ -73,8 +72,20 @@
 	</style>
 	<title>Happy New Year</title>
 </head>
+<body onload="play()">
+	<div id="hi">
+	<h1 >শুভ নববর্ষের প্রীতি ও শুভেচ্ছা</h1><br>
+	</div>
+	<h2 id="hide">--- তাতা</h2><br>
 
-<h1>শুভ নববর্ষের প্রীতি ও শুভেচ্ছা</h1><br>
-<h2>--- তাতা</h2><br>
-
+</body>
+<script>
+	function play()
+	{
+		document.getElementById("hi").style.transitionDuration = "800ms";
+		document.getElementById("hide").style.transitionDuration = "2500ms";
+		document.getElementById("hi").style.transform = "rotate(720deg)";
+		document.getElementById("hide").style.opacity = "0.8";
+	}
+	</script>
 </html>
