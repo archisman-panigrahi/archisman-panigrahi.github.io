@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detect Page Width</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detect Page Width</h1>
+    <p id="widthDisplay">The width of the page is: </p>
+    <script>
+        function displayWidth() {
+            var width = window.innerWidth;
+            alert('The width of the page is: ' + width + 'px');
+            document.getElementById('widthDisplay').innerText = 'The width of the page is: ' + width + 'px';
+        }
+
+        // Display width on page load
+        displayWidth();
+
+        // Update width when the window is resized
+        window.addEventListener('resize', displayWidth);
+    </script>
+</body>
+</html>
